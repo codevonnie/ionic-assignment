@@ -1,0 +1,25 @@
+<ion-view view-title="Calorific">
+    
+
+    <ion-content>
+      
+      <ion-list>
+        <ion-item ng-repeat="food in foods | filter:searchText">
+         <button class="ion-android-add button-positive" ng-click="addCal(food)">
+          {{food.name}} {{food.portion}} {{food.calories}}
+          </button>
+        <ion-item>
+      </ion-list>
+    </ion-content>
+
+          
+
+</ion-view>
+
+
+
+
+        
+    
+
+          
