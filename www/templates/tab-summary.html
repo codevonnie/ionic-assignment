@@ -1,9 +1,33 @@
 <ion-view view-title="Calorific">
+    <ion-content scroll="true">
 	
+     <div class="list list-inset">
+        <label class="item item-input item-stable">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search foods" ng-model="searchText">
+        </label>
+      </div>
+  
+	   <ion-list>
+        <ion-item ng-repeat="food in foods | filter:searchText"  >
+         <button class="button ion-android-add button-outline button-royal" ng-click="addCal(food)">
+          {{food.name}} {{food.portion}} {{food.calories}}
+          </button>
+        </ion-item>
+      </ion-list>
 
-	<ion-content>
-      
-      
+      <br />
+      <br />
+
+	   <div class="bar bar-footer bar-balanced">
+      <div class="title">Todays calories: {{calCount}}</div>
+        <button class="button button-assertive" ng-click="resetCal(food)">
+          Reset
+          </button>
+	   </div>
+   </div>
+
+
     </ion-content>
 
           
@@ -11,3 +35,9 @@
 </ion-view>
 
 
+
+
+        
+    
+
+          

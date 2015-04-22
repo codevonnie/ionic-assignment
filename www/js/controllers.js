@@ -7,6 +7,10 @@ angular.module('calorificApp.controllers', [])
               {"id": 3, "name":"Chicken", "portion": "large", "calories": 200},
               {"id": 4, "name":"Beef", "calories": 100},
               {"id": 5, "name":"Pork", "calories": 100},
+              {"id": 4, "name":"Beef", "calories": 100},
+              {"id": 5, "name":"Pork", "calories": 100},
+              {"id": 4, "name":"Beef", "calories": 100},
+              {"id": 5, "name":"Pork", "calories": 100},
           ];
 
           
