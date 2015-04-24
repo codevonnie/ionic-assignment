@@ -1,4 +1,4 @@
-var calorificApp = angular.module('calorificApp', ['ionic', 'calorificApp.controllers']);
+var calorificApp = angular.module('calorificApp', ['ionic', 'calorificApp.controllers', 'calorificApp.services']);
 
 calorificApp.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -34,11 +34,21 @@ calorificApp.config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('tab.addcals', {
-            url: '/addcals',
+        .state('tab.searchfood', {
+            url: '/searchfood',
             views: {
-                'tab-addcals':{
-            templateUrl: 'templates/tab-addcals.html',
+                'tab-searchfood':{
+            templateUrl: 'templates/tab-searchfood.html',
+            controller: 'FoodController'
+                }
+            }
+        })
+
+        .state('tab.addfood', {
+            url: '/addfood',
+            views: {
+                'tab-addfood':{
+            templateUrl: 'templates/tab-addfood.html',
             controller: 'FoodController'
                 }
             }

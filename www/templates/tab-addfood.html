@@ -1,0 +1,37 @@
+<ion-view view-title="Todays calories: {{calCount}}">
+
+    <ion-content>
+  
+     <form ng-submit="createFood(foods)">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Food Name</span>
+            <input type="text" placeholder="Beef, Turnip" ng-model="foods.name">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Portion Size</span>
+            <input type="text" placeholder="Small, Medium, Large" ng-model="foods.portion">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Number of Calories</span>
+            <input type="number" placeholder="55, 100, 120" ng-model="foods.calories">
+          </label>
+
+        </div>
+        <div class="padding">
+          <button type="submit" class="button button-block button-positive">Add Food</button>
+        </div>
+      </form>
+
+    </ion-content>
+
+          
+
+</ion-view>
+
+
+
+        
+    
+
+          
