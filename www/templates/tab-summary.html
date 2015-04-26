@@ -1,16 +1,36 @@
-<ion-view view-title="Summary" ng-value="getCals()">
+<ion-view view-title="Summary" ng-open="getCals()">
 
     <ion-content scroll="true">
 	
      <ion-list>
-        <ion-item>
+        <ion-item >
+        <i class="icon ion-flame"></i>
           Daily Calories: {{calCount}}
         </ion-item>
         <ion-item>
+         <span class="input-label">Add or take away calories</span>
+          <input type="text" placeholder="33, -45" ng-model="cal">
+          <div class="padding">
+          <button class="button button-positive" ng-click="changeCals(cal)">Amend</button>
+        </div>
+        <span class="input-label">Reset your calories</span>
+        <div class="padding">
+          <button class="button button-assertive" ng-click="resetCals()">Reset Calories</button>
+        </div>
+      </ion-item>
+    </ion-list>
 
-        </ion-item>
+    <div ng-open="getList()">
+      <ion-list>
+        <ion-item>
+          <h2>What you ate today:</h2>
+          <ion-list type="list-inset">
+            <ion-item ng-repeat="food in list">
+            {{list.name}} {{list.portion}} {{list.calories}}
+            </ion-item>
+        </ion-list>
       </ion-list>
-  
+    </div>
 	   
 
 

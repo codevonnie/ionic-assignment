@@ -1,4 +1,4 @@
-<ion-view view-title="Todays calories: {{calCount}}">
+<ion-view view-title="Todays calories: {{calCount}}" ng-open="getCals()" ng-open="getFoods()">
 
     <ion-content scroll="true">
   
@@ -21,7 +21,7 @@
       <br />
 
      <div class="bar bar-footer">
-        <button class="button button-assertive button-block button-large" ng-click="resetCal(food)">
+        <button class="button button-assertive button-block button-large" ng-click="resetCals()">
           <h3 class>Reset Calories</h3>
           </button>
      </div>

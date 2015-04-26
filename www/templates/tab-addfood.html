@@ -2,24 +2,24 @@
 
     <ion-content>
   
-     <form ng-submit="createFood(foods)">
+     <form>
         <div class="list">
           <label class="item item-input item-stacked-label">
             <span class="input-label">Food Name</span>
-            <input type="text" placeholder="Beef, Turnip" ng-model="foods.name">
+            <input type="text" placeholder="Beef, Turnip" ng-model="newFood.name">
           </label>
           <label class="item item-input item-stacked-label">
             <span class="input-label">Portion Size</span>
-            <input type="text" placeholder="Small, Medium, Large" ng-model="foods.portion">
+            <input type="text" placeholder="Small, Medium, Large" ng-model="newFood.portion">
           </label>
           <label class="item item-input item-stacked-label">
             <span class="input-label">Number of Calories</span>
-            <input type="number" placeholder="55, 100, 120" ng-model="foods.calories">
+            <input type="number" placeholder="55, 100, 120" ng-model="newFood.calories">
           </label>
 
         </div>
         <div class="padding">
-          <button type="submit" class="button button-block button-positive">Add Food</button>
+          <button class="button button-block button-positive" ng-click="addFood()">Add Food</button>
         </div>
       </form>
 
