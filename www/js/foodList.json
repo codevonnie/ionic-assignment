@@ -1,0 +1,498 @@
+[
+{
+"name":"Bagel plain",
+"portion":"Each",
+"calories":"150"
+},
+{
+"name":"Blueberry muffin",
+"portion":"1 muffin",
+"calories":"112"
+},
+{
+"name":"Bread rye",
+"portion":"1 slice",
+"calories":"61"
+},
+{
+"name":"Bread white",
+"portion":"1 slice",
+"calories":"68"
+},
+{
+"name":"Bread whole wheat",
+"portion":"1 slice",
+"calories":"67"
+},
+{
+"name":"Bun hamburger",
+"portion":"Each",
+"calories":"119"
+},
+{
+"name":"Croissant",
+"portion":"Each",
+"calories":"200"
+},
+{
+"name":"French bread",
+"portion":"1 slice",
+"calories":"73"
+},
+{
+"name":"Pita bread",
+"portion":"1/2 round bread",
+"calories":"80"
+},
+{
+"name":"Kit Kat bar",
+"portion":"Each",
+"calories":"250"
+},
+{
+"name":"M&Ms peanut",
+"portion":"1 package",
+"calories":"250"
+},
+{
+"name":"M&Ms plain",
+"portion":"1 package",
+"calories":"240"
+},
+{
+"name":"Mars bar",
+"portion":" Each",
+"calories":"240"
+},
+{
+"name":"Rolo caramels",
+"portion":"9 pieces",
+"calories":"270"
+},
+{
+"name":"Snickers",
+"portion":"Each",
+"calories":"275"
+},
+{
+"name":"Twix candy bar",
+"portion":"2 Fingers",
+"calories":"280"
+},
+{
+"name":"Cheerios",
+"portion":"1 oz.",
+"calories":"110"
+},
+{
+"name":"Corn Flakes",
+"portion":"1 cup",
+"calories":"100"
+},
+{
+"name":"Special K",
+"portion":"1 cup",
+"calories":"110"
+},
+{
+"name":"Oatmeal cooked",
+"portion":"1 cup",
+"calories":"132"
+},
+{
+"name":"Rice Krispies",
+"portion":"1 cup",
+"calories":"110"
+},
+{
+"name":"Oreos",
+"portion":"Each",
+"calories":"50"
+},
+{
+"name":"Ritz crackers",
+"portion":" 4 crackers",
+"calories":"70"
+},
+{
+"name":"Butter",
+"portion":"1 tbsp",
+"calories":"100"
+},
+{
+"name":"Buttermilk low-fat",
+"portion":"1 cup",
+"calories":"90"
+},
+{
+"name":"Cheese mozzarella",
+"portion":"1/4 cup",
+"calories":"90"
+},
+{
+"name":"Cheese Parmesan",
+"portion":"1 tbsp.",
+"calories":"23"
+},
+{
+"name":"Cheese Swiss",
+"portion":"1 oz.",
+"calories":"107"
+},
+{
+"name":"Cottage cheese",
+"portion":"1 cup",
+"calories":"217"
+},
+{
+"name":"Ice cream vanilla",
+"portion":"1 cup",
+"calories":"269"
+},
+{
+"name":"Margarine",
+"portion":"1 tbsp.",
+"calories":"102"
+},
+{
+"name":"Milk low fat",
+"portion":"8 fl. oz.",
+"calories":"102"
+},
+{
+"name":"Milk whole",
+"portion":"8 fl. oz.",
+"calories":"150"
+},
+{
+"name":"Yogurt plain",
+"portion":"1 cup",
+"calories":"150"
+},
+{
+"name":"Blue cheese",
+"portion":"1 tbsp.",
+"calories":"77"
+},
+{
+"name":"Egg white",
+"portion":"1 large egg",
+"calories":"17"
+},
+{
+"name":"Egg yolk",
+"portion":"1 large egg",
+"calories":"59"
+},
+{
+"name":"Scrambled eggs",
+"portion":"1 egg",
+"calories":"111"
+},
+{
+"name":"Sardines in oil",
+"portion":"3 3/4 oz.",
+"calories":"192"
+},
+{
+"name":"Tuna canned in oil",
+"portion":"1 can",
+"calories":"331"
+},
+{
+"name":"Chicken enchilada",
+"portion":"Each",
+"calories":"220"
+},
+{
+"name":"Ham Steak",
+"portion":"Each",
+"calories":"300"
+},
+{
+"name":"Pizza frozen",
+"portion":"8 oz.",
+"calories":"550"
+},
+{
+"name":"Apple medium",
+"portion":"1 apple",
+"calories":"80"
+},
+{
+"name":"Apricot",
+"portion":"Each",
+"calories":"20"
+},
+{
+"name":"Avocado",
+"portion":"Each",
+"calories":"380"
+},
+{
+"name":"Banana",
+"portion":"1 banana",
+"calories":"101"
+},
+{
+"name":"Grape",
+"portion":"Each",
+"calories":"2"
+},
+{
+"name":"Lemon",
+"portion":"Each",
+"calories":"30"
+},
+{
+"name":"Orange",
+"portion":"1 medium orange",
+"calories":"71"
+},
+{
+"name":"Strawberries",
+"portion":"1 cup",
+"calories":"53"
+},
+{
+"name":"Pepper black",
+"portion":"1 tsp.",
+"calories":"5"
+},
+{
+"name":"Salt",
+"portion":"1 tbsp.",
+"calories":"0"
+},
+{
+"name":"Apple juice",
+"portion":"1 cup",
+"calories":"117"
+},
+{
+"name":"Orange juice fresh",
+"portion":"8 fl. oz.",
+"calories":"112"
+},
+{
+"name":"Bacon",
+"portion":"20/lb.",
+"calories":"36"
+},
+{
+"name":"Beef ground cooked",
+"portion":"4 oz.",
+"calories":"347"
+},
+{
+"name":"Breakfast sausage",
+"portion":"Each",
+"calories":"48"
+},
+{
+"name":"Ham sliced",
+"portion":"1 oz.",
+"calories":"52"
+},
+{
+"name":"Pork loin roast",
+"portion":"4 oz.",
+"calories":"268"
+},
+{
+"name":"Peanut butter",
+"portion":"1 tbsp.",
+"calories":"94"
+},
+{
+"name":"Sunflower seeds",
+"portion":"1 oz.",
+"calories":"159"
+},
+{
+"name":"Egg noodles",
+"portion":"1 cup",
+"calories":"200"
+},
+{
+"name":"Spaghetti",
+"portion":"1 cup",
+"calories":"192"
+},
+{
+"name":"Chicken breast",
+"portion":"1/2 breast",
+"calories":"218"
+},
+{
+"name":"Chicken drumstick",
+"portion":"Each",
+"calories":"120"
+},
+{
+"name":"Chicken wing",
+"portion":"1 wing",
+"calories":"103"
+},
+{
+"name":"Mayonnaise",
+"portion":"1 tbsp.",
+"calories":"100"
+},
+{
+"name":"Mustard yellow",
+"portion":"1 tbsp.",
+"calories":"10"
+},
+{
+"name":"Soy sauce",
+"portion":"1 tbsp.",
+"calories":"12"
+},
+{
+"name":"White sauce",
+"portion":"1 cup",
+"calories":"241"
+},
+{
+"name":"Doritos",
+"portion":"1 oz.",
+"calories":"140"
+},
+{
+"name":"Popcorn",
+"portion":"1 cup",
+"calories":"25"
+},
+{
+"name":"Sugar",
+"portion":"1 tsp.",
+"calories":"15"
+},
+{
+"name":"Baked beans",
+"portion":"1 cup",
+"calories":"306"
+},
+{
+"name":"Beets fresh",
+"portion":"1 cup",
+"calories":"54"
+},
+{
+"name":"Broccoli cooked",
+"portion":"1 cup",
+"calories":"40"
+},
+{
+"name":"Brussel sprouts",
+"portion":"1 cup",
+"calories":"56"
+},
+{
+"name":"Cabbage cooked",
+"portion":"1 cup",
+"calories":"31"
+},
+{
+"name":"Carrots cooked",
+"portion":"1 cup",
+"calories":"45"
+},
+{
+"name":"Corn cooked",
+"portion":"1 cup",
+"calories":"140"
+},
+{
+"name":"Green pepper",
+"portion":"1 pepper",
+"calories":"16"
+},
+{
+"name":"Lettuce iceberg",
+"portion":"1 cup",
+"calories":"7"
+},
+{
+"name":"Mushrooms",
+"portion":"1 cup",
+"calories":"20"
+},
+{
+"name":"Onions raw",
+"portion":"1 cup",
+"calories":"65"
+},
+{
+"name":"Potato boiled medium",
+"portion":"Each",
+"calories":"88"
+},
+{
+"name":"Rice brown cooked",
+"portion":"1 cup",
+"calories":"232"
+},
+{
+"name":"Rice white",
+"portion":"1 cup",
+"calories":"223"
+},
+{
+"name":"Tomato raw",
+"portion":"1 tomato",
+"calories":"26"
+},
+{
+"name":"Beer",
+"portion":"12 fl. oz.",
+"calories":"145"
+},
+{
+"name":"Beer-light",
+"portion":" 12 fl. oz.",
+"calories":"100"
+},
+{
+"name":"Liquor 100 proof",
+"portion":" 1 fl. oz.",
+"calories":"83"
+},
+{
+"name":"Liquor 80 proof",
+"portion":"1 fl. oz.",
+"calories":"65"
+},
+{
+"name":"Wine",
+"portion":"4 fl. oz.",
+"calories":"100"
+},
+{
+"name":"Coca-Cola",
+"portion":"12 fl. oz.",
+"calories":"144"
+},
+{
+"name":"Coffee",
+"portion":"1 cup",
+"calories":"2"
+},
+{
+"name":"Diet Coke",
+"portion":"12 fl. oz.",
+"calories":"1"
+},
+{
+"name":"Diet Pepsi",
+"portion":"12 fl. oz.",
+"calories":"1"
+},
+{
+"name":"Sprite",
+"portion":"12 fl. oz.",
+"calories":"142"
+}
+
+]

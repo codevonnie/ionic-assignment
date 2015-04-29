@@ -1,3 +1,5 @@
+//angular module called calorificApp. Has dependencies injected which are ionic and my own controllers and 
+  //services/factories
 var calorificApp = angular.module('calorificApp', ['ionic', 'calorificApp.controllers', 'calorificApp.services']);
 
 calorificApp.run(function($ionicPlatform) {
@@ -13,17 +15,19 @@ calorificApp.run(function($ionicPlatform) {
     }
   });
 })
-
+//config controls the different tab views of the app and uses stateProvider and urlRouterProvider
+// sets up the various states which the app can be in.
 calorificApp.config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider
-
+        // setup an abstract state for the tabs directive
         .state('tab', {
             url: '/tab',
             abstract: true,
             templateUrl: "templates/tabs.html"
           })
-
+        /*each state has a state name, the url where it can be found, the location of the template html
+          file for the tab and the controller used by the view*/
         .state('tab.summary', {
             url: '/summary',
             views: {
@@ -33,7 +37,8 @@ calorificApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-
+        /*each state has a state name, the url where it can be found, the location of the template html
+          file for the tab and the controller used by the view*/
         .state('tab.searchfood', {
             url: '/searchfood',
             views: {
@@ -43,7 +48,8 @@ calorificApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-
+        /*each state has a state name, the url where it can be found, the location of the template html
+          file for the tab and the controller used by the view*/
         .state('tab.addfood', {
             url: '/addfood',
             views: {
@@ -53,9 +59,7 @@ calorificApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         });
-
-
-    // if none of the above states are matched, use this as the fallback
+    // if none of the above states are matched, use this tab
     $urlRouterProvider.otherwise('/tab/summary');
     }
 );

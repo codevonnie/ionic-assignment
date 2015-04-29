@@ -1,24 +1,25 @@
 <!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
+Each tab has an icon and label.
+Each <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+	<!-- Summary tab contains icon of stat bars which is highlighted when that view is the current view and dimmed when it is not the current view. the href is the link that the tab navigates to when tapped. -->
+	<ion-tab title="Summary" icon-off="ion-stats-bars" icon-on="ion-stats-bars" href="#/tab/summary">
+    	<!-- name of the view -->
+    	<ion-nav-view name="tab-summary"></ion-nav-view>
+  	</ion-tab>
 
-
-  <ion-tab title="Summary" icon-off="ion-stats-bars" icon-on="ion-stats-bars" href="#/tab/summary">
-    <ion-nav-view name="tab-summary"></ion-nav-view>
-  </ion-tab>
-
-  
-  <ion-tab title="Search" icon-off="ion-search" icon-on="ion-search" href="#/tab/searchfood">
-    <ion-nav-view name="tab-searchfood"></ion-nav-view>
-  </ion-tab>
-
-  <ion-tab title="Add" icon-off="ion-pizza" icon-on="ion-pizza" href="#/tab/addfood">
-    <ion-nav-view name="tab-addfood"></ion-nav-view>
-  </ion-tab>
-
+  	<!-- Foods tab contains icon of magnifying glass which is highlighted when that view is the current view and dimmed when it is not the current view. the href is the link that the tab navigates to when tapped. -->
+  	<ion-tab title="Foods" icon-off="ion-search" icon-on="ion-search" href="#/tab/searchfood">
+  		<!-- name of the view -->
+    	<ion-nav-view name="tab-searchfood"></ion-nav-view>
+  	</ion-tab>
+	<!-- Add tab contains icon of pizza which is highlighted when that view is the current view and dimmed when it is not the current view. the href is the link that the tab navigates to when tapped. -->
+  	<ion-tab title="Add" icon-off="ion-pizza" icon-on="ion-pizza" href="#/tab/addfood">
+  		<!-- name of the view -->
+    	<ion-nav-view name="tab-addfood"></ion-nav-view>
+  	</ion-tab>
 </ion-tabs>
 
 

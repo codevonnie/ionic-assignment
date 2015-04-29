@@ -1,37 +1,44 @@
 <ion-view view-title="Todays calories: {{calCount}}" ng-open="getCals()" ng-open="getFoods()">
-
-    <ion-content scroll="true">
-  
+    <!-- ion-content holds the view content and allows scrolling which is set to true as default -->
+    <ion-content>
+    <!-- div inset list item-->
      <div class="list list-inset">
-        <label class="item item-input item-stable">
+        <!-- label for search food input -->
+        <label class="item item-input item-light">
+          <!-- ion icon of a magnifying glass to signify search -->
           <i class="icon ion-search placeholder-icon"></i>
+          <!-- input box takes text and contains a placeholder which tells the user to input food for search. user input is binding to searchText which is used as a filter in the code below -->
           <input type="text" placeholder="Search foods" ng-model="searchText">
         </label>
       </div>
-  
+      <!-- Header over food list showing the headings for the displayed foods ie Food, Portion, Calories -->
+      <ion-item class="item item-positive">
+          <!-- &nbsp used to tab foods into proper position and pipes used to differentiate between words -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Food&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calories
+    </ion-item>
+      <!-- ion list of foods -->
      <ion-list>
+        <!-- ng-repeat is used to print out each object in foods and filter by the user inputted search value above -->
         <ion-item ng-repeat="food in foods | filter:searchText"  >
-         <button class="button ion-ios-plus button-clear button-dark button-large pull-left" ng-click="addCal(food)">
-          {{food.name}} {{food.portion}} {{food.calories}}
+          <!-- each item in list has a button which when clicked calls the addCal method in the controller and passes it the selected food object -->
+          <button class="button ion-ios-plus button-clear button-positive button-large pull-left" ng-click="addCal(food)">
+          <!-- each element of the objects are printed to the screen -->
+          &nbsp;&nbsp;{{food.name}}&nbsp;&nbsp;|&nbsp;&nbsp;{{food.portion}}&nbsp;&nbsp;|&nbsp;{{food.calories}}
           </button>
         </ion-item>
       </ion-list>
-
+      <!-- break to separate footer and code above -->
       <br />
       <br />
-
-     <div class="bar bar-footer">
-        <button class="button button-assertive button-block button-large" ng-click="resetCals()">
-          <h3 class>Reset Calories</h3>
+      <!-- bar footer contained at the bottom of the page -->
+      <div class="bar bar-footer">
+        <!-- inside footer is a button which will allow the user to reset their calories by calling the resetCals method from the controller -->
+        <button class="button button-assertive button-block" ng-click="resetCals()">
+            <!-- text on button -->
+            <h3 style="color:white">Reset Calories</h3>
           </button>
-     </div>
-   </div>
-
-
+      </div>
     </ion-content>
-
-          
-
 </ion-view>
 
 

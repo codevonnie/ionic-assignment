@@ -1,43 +1,62 @@
+<!-- Summary view which loads in method to get calories from the controller -->
 <ion-view view-title="Summary" ng-open="getCals()">
-
-    <ion-content scroll="true">
+    <!-- ion-content holds the view content and allows scrolling which is set to true as default -->
+    <ion-content>
 	
-     <ion-list>
-        <ion-item >
+        <!-- ion-item coloured blue with font size of 28px and text coloured black -->
+        <ion-item class="item item-positive" style="font-size:28px; color: black">
+        <!-- ion icon of a flame -->
         <i class="icon ion-flame"></i>
-          Daily Calories: {{calCount}}
+          <!-- Daily calories listed here with the calories variable printed out -->
+          &nbsp;&nbsp;Daily Calories: {{calCount}}
         </ion-item>
-        <ion-item>
-         <span class="input-label">Add or take away calories</span>
-          <input type="text" placeholder="33, -45" ng-model="cal">
-          <div class="padding">
-          <button class="button button-positive" ng-click="changeCals(cal)">Amend</button>
+        <!-- div item which loads in the foodsEaten variable from the controller which contains the foods selected for the day -->
+        <div ng-open="getList()">
+          <ion-list>
+            <!-- list heading -->
+            <ion-item class="item" style="font-size:24px; color:#387ef5">
+              Todays Foods:
+              <!-- list set inside the outer list -->
+              <ion-list type="list-inset">
+                <!-- ng-repeat used to list out the different elements of the foodEaten list object -->
+                <ion-item ng-repeat="food in list" style="font-size:20px; background:#CCCCFF">
+                  <!-- each list item has a name, portion and calorie count which is displayed to screen -->
+                  {{food.name}} {{food.portion}} {{food.calories}}
+                </ion-item>
+              </ion-list>
+          </ion-list>
         </div>
-        <span class="input-label">Reset your calories</span>
-        <div class="padding">
-          <button class="button button-assertive" ng-click="resetCals()">Reset Calories</button>
-        </div>
-      </ion-item>
-    </ion-list>
-
-    <div ng-open="getList()">
-      <ion-list>
+        <br />
+        <!-- List containing button items -->
+        <ion-list>
+        <!-- first item -->
         <ion-item>
-          <h2>What you ate today:</h2>
-          <ion-list type="list-inset">
-            <ion-item ng-repeat="food in list">
-            {{list.name}} {{list.portion}} {{list.calories}}
-            </ion-item>
-        </ion-list>
+          <!-- label for input box -->
+          <span class="input-label" style="font-size:24px; color:#387ef5">Add or take away calories</span>
+            <!-- input box takes a type text and has a placeholder with an example of values to input. value inputted is bound to ng-model cal -->
+            <input type="number" placeholder="33, -45" ng-model="cal">
+              <!-- div class with padding -->
+              <div class="padding">
+                <!-- block button to amend calories with user input value. button click calls changeCals method in controller and passes inputted cal value -->
+                <button class="button button-positive button-block" ng-click="changeCals(cal)">Amend</button>
+              </div>
+              <br />
+                <!-- Label for button to tell user they can reset their calorie count -->
+                <span class="label" style="font-size:24px; color:#387ef5">Reset your calories</span>
+                  <!-- div class with padding -->
+                  <div class="padding">
+                    <!-- block button that calls resetCals method in controller which resets the current calorie count -->
+                    <button class="button button-assertive button-block" ng-click="resetCals()">Reset Calories</button>
+                </div>
+                <!-- Label to tell user they can reset their current food list -->
+              <span class="label" style="font-size:24px; color:#387ef5">Reset your foods</span>
+                <div class="padding">
+                  <!-- block button that calls resetFoods method in controller to reset the current list of foods selected by user -->
+                  <button class="button button-energized button-block" style="color:black" ng-click="resetFoods()">Reset Foods</button>
+                </div>
+        </ion-item>
       </ion-list>
-    </div>
-	   
-
-
     </ion-content>
-
-          
-
 </ion-view>
 
 
